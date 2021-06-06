@@ -54,7 +54,7 @@ public class UpdateServlet extends HttpServlet {
             em.close();
 
             // セッションスコープ上の不要になったデータを削除
-            request.getSession().removeAttribute("task_id");
+            request.getSession().removeAttribute("tasks_id");
 
             // indexページへリダイレクト
             response.sendRedirect(request.getContextPath() + "/index");
